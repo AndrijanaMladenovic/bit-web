@@ -1,0 +1,14 @@
+p{
+  background-color: yellow;
+  border-width: 5px thick !important; 
+  
+}
+
+p.one,p.three{
+  border: 5px dashed red;
+ 
+}
+
+p.two{
+  border: 5px solid green;
+}
