@@ -1,0 +1,14 @@
+a{
+  color: red;
+  text-shadow: 2px 2px rgb(210, 202, 202);
+}
+a:visited{
+  color: black;
+}
+a:hover{
+  color: green;
+}
+
+a:active{
+  color: blue;
+}

@@ -1,0 +1,17 @@
+p.one::before{
+  content: '"Andrijana Mladenovic"';
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ p.two::before{
+  content: '"Pera peric"';
+  font-style: italic;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ p.three::before{
+  content: '"ldasdjalsdj"';
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }

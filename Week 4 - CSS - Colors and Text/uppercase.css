@@ -1,0 +1,9 @@
+p.one{
+  text-transform: uppercase;
+  text-decoration: underline;
+
+}
+p.two{
+  text-transform: lowercase;
+  text-decoration: line-through;
+}
