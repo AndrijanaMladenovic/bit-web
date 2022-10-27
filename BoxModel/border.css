@@ -11,4 +11,36 @@ p.one,p.three{
 
 p.two{
   border: 5px solid green;
+  padding-top: 50px;
+  margin: 0px 400px 0px 400px !important;
+  align-self: center !important  ;
+
+}
+
+p.one,p.three{
+  padding: 50px;
+
+}
+p.one{
+  margin-left: 300px;
+  margin-right: 300px;
+  margin: 50px;
+}
+.three{
+  margin: 0 200px 0 300px;
+  display: none;
+}
+h1{
+  width: 960px;
+ 
+  text-align: center;
+  margin-left: 24%;
+  
+  margin-top: 50px ;
+  margin-bottom: 50px ;
+  background-color: pink;
+  color: palevioletred;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 10px;
+  box-shadow: 18px 3px 106px -10px rgba(230,89,230,1) !important;
 }

@@ -11,4 +11,11 @@ p.two{
   width: 600px;
   height: 300px;
   max-height: 200px;
+  
+}
+p{
+  margin-right: 20px;
+  padding: 0;
+ 
+  display: inline;
 }
