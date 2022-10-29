@@ -1,0 +1,26 @@
+li.one{
+  list-style-type: circle;
+}
+li.two{
+  list-style: square;
+}
+
+ol li:first-child{
+  list-style: upper-alpha;
+}
+ol li:last-child{
+  list-style: upper-roman;
+}
+
+li.list-one{
+  width: 200px;
+  list-style-image: url('./alert-outline.svg');
+ 
+}
+
+li.list-two{
+  width: 200px; 
+  list-style-image: url('./calendar-outline.svg');
+  list-style-position: inside;
+}
+

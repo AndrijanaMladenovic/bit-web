@@ -1,0 +1,25 @@
+th{
+  background-color: red;
+  color: white;
+}
+
+tr:hover{
+  background-color: yellow;
+  cursor: pointer;
+}
+
+table{
+  border: none;
+  padding: 0 !important;
+  border-spacing: 0;
+  
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.one{
+  background-color: rgba(153, 148, 148, 0.623);
+}

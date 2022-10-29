@@ -1,0 +1,66 @@
+span{
+  color: rgb(255, 149, 0);
+}
+
+section{
+  background-color: rgba(192, 192, 192, 0.746);
+  
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  
+}
+
+h1{
+  font-size: 36px;
+  text-decoration: underline gray ;
+  text-underline-offset: 15px;
+  
+  
+}
+
+input{
+  border: 1px solid silver;
+  border-radius: 5px ;
+}
+
+div.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  background-color: red;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 163px;
+  padding: 5px 0;
+}
+
+.dugme:hover{
+  cursor: url(./logo-web-component.svg),auto;
+}
+
+.jedan{
+  cursor: copy;
+}
+
+
+.dva{
+  cursor: all-scroll;
+}
+
+
+.tri{
+  cursor: grab;
+}
+
+
+.cetri{
+  cursor: alias;
+}
