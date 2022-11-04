@@ -1,0 +1,32 @@
+img{
+  width: 200px;
+}
+
+img.prva{
+  position: relative;
+  top: 50px;
+  left: 100px;
+  margin-bottom: 50px;
+}
+
+img.druga{
+  position: absolute;
+  right: 10px;
+  top: 15px;
+ padding-bottom: 20px;
+  
+}
+img.treca{
+  position: relative;
+  top: 700px;
+  margin-top: 100px;
+
+}
+a{
+  margin-left: 90%;
+ 
+}
+h1{
+  color: red;
+  margin-left: 50%;
+}

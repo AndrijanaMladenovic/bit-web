@@ -1,0 +1,94 @@
+nav{
+  background-color: red;
+  
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  color: white;
+  list-style: none;
+  padding-right: 50px;
+}
+main{
+  display: flex;
+  justify-content: center;
+}
+img{
+  height: 500px;
+ 
+  padding-left: 10px;
+}
+.kocka{
+  background-color: red;
+  width: 300px;
+  height: 200px;
+}
+
+.kockaDva{
+  background-color: green;
+  width: 300px;
+  height: 200px;
+}
+
+.linkovi{
+  background-color: yellow;
+  color: grey;
+  padding: 10px;
+  
+}
+
+section{
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+p{
+  width: 300px;
+}
+a{
+  color: black;
+  text-decoration: none;
+  
+}
+
+.kockaTri{
+  background-color: red;
+  width: 300px;
+  height: 200px;
+}
+.kockaJedan{
+  background-color: yellow;
+  width: 300px;
+  height: 200px;
+}
+
+.kockaCetri{
+  width: 300px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.692);
+}
+.kockaPet{
+  width: 300px;
+  height: 200px;
+  background-color: yellow;
+}
+.kockaSest{
+  width: 300px;
+  height: 200px;
+  background-color: green;
+}
+
+footer{
+  height: 50px;
+  background-color: grey;
+}
