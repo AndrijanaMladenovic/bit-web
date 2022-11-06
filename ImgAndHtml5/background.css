@@ -1,0 +1,26 @@
+
+/* REPEAT
+body{
+  background-image: url(./img/photo-1503455637927-730bce8583c0.avif);
+  background-attachment: fixed;
+} */
+
+
+h1,h2,p{
+  color: white;
+}
+/* POSITION
+body{
+  background-image: url(./img/photo-1503455637927-730bce8583c0.avif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right center;
+}
+*/
+
+/***** SIZE *****/
+
+body{
+  background-image: url(./img/photo-1558637845-c8b7ead71a3e.avif);
+  background-size: cover;
+}

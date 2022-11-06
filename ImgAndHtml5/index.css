@@ -1,0 +1,15 @@
+.first{
+  height: 200px;
+  float: right;
+}
+
+.second{
+  width: 200px;
+  float: center;
+}
+
+.third{
+  width: 200px;
+  height: 200px;
+  float: left;
+}
