@@ -1,0 +1,68 @@
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+nav{
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+  
+}
+.naslov{
+  display: flex;
+  gap: 30px;
+  
+  
+}
+img{
+  width: 50px;
+  height: 50px;
+  align-self: center;
+}
+
+h1{
+  font-size:48px;
+  align-self: center;
+  margin: 0;
+}
+
+.paragraf{
+  margin: 0;
+  padding-left: 80px;
+  
+}
+
+section{
+  display: flex;
+  gap: 20px;
+}
+.linija{
+  width: 5px;
+  background-color: black;
+}
+.container{
+  position: fixed;
+  width: 960px;
+}
+
