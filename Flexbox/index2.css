@@ -1,0 +1,89 @@
+
+
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.one{
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  color: white;
+  
+}
+
+.two{
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  color: white;
+}
+
+.tri{
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  color: white;
+
+}
+
+.four{
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  color: white;
+}
+
+.pet{
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  color: white;
+}
+
+.sest{
+  background-color: palevioletred;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  color: white;
+  
+}
+
+.first{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.secound{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.three{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
