@@ -1,0 +1,113 @@
+$background : pink;
+$background2:rgb(194, 132, 142);
+$color : black;
+$widh:960px;
+$width2:300px;
+
+p{
+  background-color: $background;
+  color:$color;
+  font-size: 25px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: $color;
+}
+
+.container {
+  width: $widh;
+  margin: 20px auto;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background: #607D8B;
+  h1 {
+    padding: 20px 0;
+    text-align: center;
+    background: $background;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+  }
+  h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    text-align: left;
+    background: $background;
+    color: white;
+  }
+  .title {
+    background-color: $background2;
+  
+  }
+  img {
+    height: 400px;
+    margin: 40px auto 40px;
+    display: block;
+    transform: rotate(06deg);
+  }
+  .naslov {
+    background-color: $background !important;
+  }
+  #naslov{
+    background-color: $background;
+  }
+  #color{
+    background-color: $background;
+  }
+  img:hover{
+    transform: rotate(0deg);
+    
+  }
+  p#footer {
+    margin-top: 100px;
+    color: white;
+    border-top: 1px solid white;
+    padding-top: 20px;
+  }
+}
+
+table {
+  width: $widh;
+  color: rgb(0, 0, 0);
+  background-color: $background2;
+  border-collapse: collapse;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+;  tr {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    font-family: 'Kanit', sans-serif;
+  }
+  td {
+    padding: 5px 0;
+    font-family: 'Kanit', sans-serif;
+  }
+  .even {
+    background-color: $background2;
+  }
+  td:first-child {
+    width: $width2;
+    padding-left: 10px;
+    background-color: $background;
+  }
+  #kolona{
+    background-color: $background;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

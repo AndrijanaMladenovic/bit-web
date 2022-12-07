@@ -1,0 +1,92 @@
+p {
+  text-shadow: 2px 1px #635757; }
+
+.paragraf {
+  background: pink;
+  margin: 50px;
+  box-shadow: 5px 5px 5px #333; }
+
+p {
+  display: inline-block; }
+
+main .prvi1, main .prvi2, main .prvi3 {
+  border: 10px solid red;
+  text-shadow: none;
+  padding: 5px;
+  background-color: yellow; }
+main .prvi2 {
+  border: 10px solid blue; }
+main .prvi3 {
+  border: 10px solid green; }
+
+.prvi1, main .prvi2, main .prvi3 {
+  padding: 20px;
+  width: 200px; }
+
+.prvi2 {
+  padding: 25px;
+  width: 250px; }
+
+.prvi3 {
+  padding: 30px;
+  width: 300px; }
+
+ul {
+  list-style: none; }
+  ul a {
+    text-decoration: none;
+    background-color: green;
+    color: white; }
+
+a:link {
+  background-color: yellow; }
+
+a:visited {
+  background-color: orange; }
+
+.paragraf2 {
+  box-shadow: none;
+  text-shadow: none;
+  background-color: none; }
+
+.one1 {
+  font-size: 16px;
+  text-shadow: none;
+  box-shadow: none;
+  background-color: red;
+  background-color: red;
+  background-color: red;
+  background-color: red;
+  box-sizing: border-box; }
+
+.one2 {
+  font-size: 18px;
+  text-shadow: none;
+  box-shadow: none;
+  background-color: green;
+  background-color: green;
+  background-color: green;
+  background-color: green;
+  box-sizing: border-box; }
+
+.one3 {
+  font-size: 20px;
+  text-shadow: none;
+  box-shadow: none;
+  background-color: pink;
+  background-color: pink;
+  background-color: pink;
+  background-color: pink;
+  box-sizing: border-box; }
+
+.one4 {
+  font-size: 22px;
+  text-shadow: none;
+  box-shadow: none;
+  background-color: yellow;
+  background-color: yellow;
+  background-color: yellow;
+  background-color: yellow;
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=output2.css.map */

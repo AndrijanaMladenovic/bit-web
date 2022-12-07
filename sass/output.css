@@ -1,0 +1,73 @@
+p {
+  background-color: pink;
+  color: black;
+  font-size: 25px; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: black; }
+
+.container {
+  width: 960px;
+  margin: 20px auto;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background: #607D8B; }
+  .container h1 {
+    padding: 20px 0;
+    text-align: center;
+    background: pink;
+    color: white;
+    font-family: 'Kanit', sans-serif; }
+  .container h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    text-align: left;
+    background: pink;
+    color: white; }
+  .container .title {
+    background-color: #c2848e; }
+  .container img {
+    height: 400px;
+    margin: 40px auto 40px;
+    display: block;
+    transform: rotate(6deg); }
+  .container .naslov {
+    background-color: pink !important; }
+  .container #naslov {
+    background-color: pink; }
+  .container #color {
+    background-color: pink; }
+  .container img:hover {
+    transform: rotate(0deg); }
+  .container p#footer {
+    margin-top: 100px;
+    color: white;
+    border-top: 1px solid white;
+    padding-top: 20px; }
+
+table {
+  width: 960px;
+  color: black;
+  background-color: #c2848e;
+  border-collapse: collapse;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
+  table tr {
+    border-bottom: 1px solid white;
+    font-family: 'Kanit', sans-serif; }
+  table td {
+    padding: 5px 0;
+    font-family: 'Kanit', sans-serif; }
+  table .even {
+    background-color: #c2848e; }
+  table td:first-child {
+    width: 300px;
+    padding-left: 10px;
+    background-color: pink; }
+  table #kolona {
+    background-color: pink; }
+
+/*# sourceMappingURL=output.css.map */

@@ -1,0 +1,127 @@
+@mixin text-shadow($direrction,$color,$size) {
+  text-shadow:2px 1px #635757 ;
+  
+}
+p{
+  @include text-shadow(bottom,#5bc0bb, 30px);
+ 
+}
+
+@mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {
+  box-shadow: $x-axis $y-axis $blur $color;
+}
+
+.paragraf {
+  background: pink;
+  margin: 50px;
+  @include box-shadow(5px, 5px, 5px, #333)
+  
+}
+p{
+  display: inline-block;
+}
+
+$color:red  ;
+$color2:blue;
+$color3: green ;
+
+main{
+  .prvi1{
+    border: 10px solid $color;
+    text-shadow: none;
+    padding: 5px;
+    background-color: yellow;
+  }
+  .prvi2{
+    border: 10px solid $color2;
+    @extend .prvi1;
+  }
+  .prvi3{
+    border: 10px solid $color3;
+    @extend .prvi1;
+  }
+}
+
+$padding:20px;
+$width:200px;
+
+@for $i from 1 through 3{
+  .prvi#{$i} {
+   padding: $padding;
+   width: $width;
+  }
+ $padding: $padding + 5;
+ $width : $width + 50;
+}
+
+ul{
+  list-style: none;
+  a{
+    text-decoration: none;
+    background-color: green;
+    color: white;
+  }
+  
+}
+
+a:link{
+  background-color: yellow;
+}
+a:visited{
+  background-color:orange ;
+}
+
+.paragraf2{
+  box-shadow: none;
+  text-shadow: none ;
+  background-color: none;
+}
+
+@mixin background-color($number) {
+  background-color: rgb(random(255), random(255), random(255));}
+
+ $box:border-box;
+ @function translate($box){
+  @return $box
+}
+
+
+
+
+@mixin diff_background($num) {
+  @for $i from 1 through 4 {
+      @if $num == 1 {
+          background-color: red;
+      } @else if $num == 2 {
+          background-color: green;
+      } @else if $num == 3 {
+          background-color: pink;
+      } @else {
+          background-color: yellow;
+      }
+  }
+}
+
+$font-size:16px;
+@for $i from 1 through 4 {
+  .one#{$i} {
+    font-size:$font-size;
+    text-shadow: none;
+    box-shadow: none;
+    @include diff_background($i);
+    box-sizing: translate($box);
+  }
+ $font-size: $font-size+2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
