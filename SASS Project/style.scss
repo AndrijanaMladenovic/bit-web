@@ -1,0 +1,464 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  
+}
+@font-face {
+  font-family: roboto-black;
+  src: url(./assets/fonts/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: roboto-regular;
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+$color-primary: rgb(83,162,224);
+$color-secondary: rgb(241,155,43);
+$color-white:white;
+$color-black:black;
+$color-contact: rgb(59,221,154);
+$color-connect: rgb(253,82,130);
+$color-address:rgb(55,109,228) ;
+$color-home: rgb(130,195,245);
+
+@mixin flex-column() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin kocka() {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  transform: rotate(45deg);
+}
+
+@mixin button(){
+  width: 200px;
+  align-self: center;
+  background-color:$color-primary;
+  color: $color-white;
+  border-radius: 50px;
+  border: none;
+  height: 40px;
+  margin-top: 20px;}
+
+  @mixin grid() {
+    padding: 30px;
+    
+    padding-left: 80px;
+    padding-right: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+   
+    gap: 20px;
+  }
+
+@mixin ikona() {
+  width: 100px;
+  height: 1px;
+  background-color: black;
+  }
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  background-image: url(./assets/images/banner3.jpg);
+  text-transform: uppercase;
+  color: $color-white;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1{
+    font-family: roboto-regular;
+    font-size: 36px;
+    letter-spacing: 5px;}
+    
+ }
+.naslov{
+  @include flex-column();
+  padding: 100px 0 50px 0;
+  
+}
+
+span{
+  color: $color-secondary;
+  border-top: 3px solid $color-white;
+  border-bottom: 3px solid $color-white;
+  border-left: 3px solid $color-white;
+  padding: 5px;
+
+}
+.logo{
+  color: $color-white;
+}
+
+$primary-padding:20px;
+$secondary-padding:80px;
+
+header{
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: $primary-padding;
+  position: absolute;
+  width: 100%;
+  
+  
+}
+
+button.read{
+  @include button();
+}
+main{
+  margin-bottom: 20px;
+  width: 100%;
+  bottom: 1%;
+  z-index: -1;
+  @include flex-column()
+ }
+
+ ul{
+  color: $color-white;
+  gap: 20px;
+  @include flex-row();
+  list-style: none;
+a{
+  color: $color-white;
+  font-size: 14px;
+  font-family: roboto-black;
+}
+p{
+  padding: 15px 0px;
+  font-family: roboto-regular;
+}
+
+ }
+.ikona{
+  @include flex-row();
+  gap: 10px
+}
+ 
+
+ .linija{
+  @include ikona();
+ }
+
+ .kocka{
+  @include kocka();
+ }
+
+ .container{
+  @include grid();
+  padding: 0 $secondary-padding 0 $secondary-padding;
+  gap: 20px;
+
+ }
+
+ .baner{
+  width: -webkit-fill-available;}
+
+  .left-side{
+    @include flex-column();
+    align-items: flex-start;
+    flex-grow: 0.5;
+    justify-content: none;
+  
+  }
+  .right-side{
+    @extend .left-side;
+   
+   }
+
+  h3{
+    padding: 20px 0px;
+    text-transform: capitalize;
+    color: $color-primary;
+    font-family: roboto-regular;
+  }
+
+  h2{
+    text-transform: capitalize;
+    font-family: roboto-regular;
+    font-size: 36px;
+  }
+
+  p{
+    padding: 15px 0px;
+  }
+
+  //*** testimonial *///
+  
+  .testimonial{
+    @include flex-row();
+    gap: 20px;
+    padding: $secondary-padding;
+   
+    .one{
+      background-color: $color-primary;
+     
+    }
+    .two{
+      @extend .one
+    }
+    .three{
+      @extend .one
+    }
+    .name{
+      padding: $primary-padding;
+      @include flex-row();
+      gap: 30px;
+      justify-content: left;
+    }
+    .slika{
+      border-radius: 100%;
+      border: 1px solid white;
+      width: 80px;
+      padding: 5px;
+    }
+    .tekst{
+      color: $color-white;
+      padding:  0 $primary-padding $primary-padding;
+    
+    }
+  }
+
+  .star{
+    color: $color-white;
+  }
+
+  h4{
+    text-transform: uppercase;
+    font-family: roboto-black;
+  }
+
+  ///**  ADRESA  **///
+   
+  .row{
+    display: flex;
+    flex-direction: row;
+    width:  100%;
+    padding-top: 30px;
+   
+    .contact-us{
+      @include flex-column();
+      background-color: $color-contact;
+      justify-content: flex-start;
+      padding-top: 50px;
+      gap: 20px;
+      width: 25%;
+      text-transform: uppercase;
+      align-items: center;
+      color: $color-white;
+       
+      
+    }
+    .connect-us{
+      background-color: $color-connect;
+      @extend .contact-us;
+      gap: 50px;
+     
+    }
+    .address{
+      background-color: $color-address;
+      @extend .contact-us;
+    }
+    .home{
+      background-color: $color-home;
+      @extend .contact-us;
+    }
+
+}
+
+.email{
+  display: flex;
+  align-items: center;
+}
+.mobile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icons{
+  color: white;
+  display: flex;
+  gap: 25px;
+}
+
+.icon-contact{
+  color: white;
+  padding: 5px;
+}
+
+.location{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  text-transform: none;
+  
+}
+a{
+  color: white;
+}
+
+///**** MAIL ****///
+
+
+.mail{
+  @include flex-column();
+  
+  form{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .text-area{
+    display: flex;
+    flex-direction: column;
+    padding-top: $primary-padding;
+  }
+  input{
+    height: 35px;
+    padding-left: 10px;
+  }
+}
+
+textarea{
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+button.submit{
+  background-color: $color-secondary;
+  width: 100px;
+  border: none;
+  color: $color-white;
+  height: 30px;
+}
+
+////// ***  FOOTER *** //////
+
+footer{
+  @include flex-column();
+  background-color:rgb(33,33,33) ;
+  height: 100px;
+  margin-top: $primary-padding;
+  .footer{
+    color: $color-white;
+  }
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+////// ***  MEDIA*** //////
+@mixin grid-2 {
+  display: grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+}
+@mixin grid-1{
+  grid-template-columns:repeat(1, minmax(0, 1fr));
+}
+
+
+@media (max-width: 1100px){
+  h1{
+    text-align: center;
+  }
+  .container{
+    @include grid-2();
+  }
+  .row{
+    @include grid-2();
+    grid-auto-rows: 1fr;
+  }
+  .contact-us{
+    width: auto !important;
+  }
+  .connect-us{
+    width: auto;
+  }
+  .address{
+    width: auto;
+  }
+  .home{
+     width: auto;
+  }
+ .testimonial{
+  @include grid-2()
+ }
+ p.treca-kolona{
+  width: 650px;
+ }
+}
+
+@media (max-width: 800px){
+  header{
+    @include flex-column();
+    position: relative;
+    gap: 20px;
+  }
+  .linkovi{
+    background-color: $color-primary;
+    @include flex-column();
+    width: 600px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .logo span{
+    border-color: grey;
+  }
+  .logo{
+    color: grey;
+    font-size: 30px;
+  }
+  main{
+    height: 600px;
+    width: 110%;
+  }
+  .container{
+    @include grid-1()
+  }
+  .testimonial{
+    @include grid-1()
+  }
+  form{
+    display: grid !important;
+    @include grid-1();
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px){
+  .linkovi{
+    width: 100%;
+  }
+  .row{
+    @include grid-1();
+  }
+  footer{
+    @include flex-column();
+    height: auto;
+  }
+  ul{
+    @include flex-column();
+    padding-top: $primary-padding;
+  }
+  p.treca-kolona{
+    width: auto;
+   }
+   main{
+    width: auto;
+   }
+}
