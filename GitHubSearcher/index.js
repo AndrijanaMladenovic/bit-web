@@ -2,11 +2,15 @@
 
 var url = "https://api.github.com/search/users?q=";
 var input = $("input").val();
-const queryString =
-  "q=" + encodeURIComponent("GitHub Octocat in:readme user:defunkt");
+
 var errorElement = $(".alert");
 var cardHolder = $(".cardHolder");
+$("input").keyup(function (e) {
+  var keyName = e.key;
 
+  if (keyName === "Enter") {
+  }
+});
 $(document).ready(function () {
   search();
 });
@@ -29,10 +33,10 @@ function search(input) {
         }
         response.items.forEach(function (item) {
           var card = $(
-            `<div class='card'><img src = '${item.avatar_url}'/>
-            <p>${item.login}</p></div> `
+            `<div class='card'><img src = '${item.avatar_url}'/></div> `
           );
           $(".cardHolder").append(card);
+          console.log(card);
         });
       });
     }
