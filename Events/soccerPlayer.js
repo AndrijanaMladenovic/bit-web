@@ -8,26 +8,24 @@
 // }
 
 var teren = document.querySelector(".teren");
-var btn = document.querySelector(".btn");
+var btn = document.querySelector("#stop");
 var fudbaler = document.getElementById("fudbaler");
-var teren = document.querySelector(".teren");
 
 // move("click");
-
-function move() {
-  var x = event.clientX - 70;
-  var y = event.clientY - 70;
+teren.addEventListener("click", function (e) {
+  var x = e.clientX - 70;
+  var y = e.clientY - 70;
 
   fudbaler.style.top = y + "px";
   fudbaler.style.left = x + "px";
-}
-teren.addEventListener("click", move);
+  console.log(e.stopPropagation());
+  e.stopPropagation();
+});
 
-function remove() {
-  teren.removeEventListener("click", move);
-  btn.textContent = "No more moving";
-}
+var teren = document.querySelector(".teren");
+var btn = document.querySelector("#stop");
 
+btn.addEventListener("click", function () {});
 //
 //  if (isTurnOn) {
 //  field.removeEventListener("click", movePlayer);
